@@ -24,10 +24,8 @@ Extrair todos os resultados da [lotofácil no site](https://loterias.caixa.gov.b
 
  >python minha_resolucao.py 'site_da_caixa'
 
- Outra curiosidade legal desse exercício é que podemos pegar outros concursos como mega-sena mudando o parametro modalidade da url.
-
 Alguns problemas que surgiram, o site mudou do vídeo para os dias atuais então o código de solução proposto não funciona diretamente, precisando de alguns ajustes.
-Outro problema enfrentado foi tentar mapear o trafego de rede do site, quando atualizo a página com a ferramenta de inspeção aberta o site não termina de carregar, mas o botcamp tem um vídeo de atualização da resolução que nos mostra essa parte e é pega uma url na qual devemos fazer a requisição para termos a página[https://servicebus2.caixa.gov.br/portaldeloterias/api/resultados?modalidade=Lotofácil].
+Outro problema enfrentado foi tentar mapear o trafego de rede do site, quando atualizo a página com a ferramenta de inspeção aberta o site não termina de carregar, mas o botcamp tem um vídeo de atualização da resolução que nos mostra essa parte e é pega uma url na qual devemos fazer a requisição para termos a página[https://servicebus2.caixa.gov.br/portaldeloterias/api/resultados?modalidade=Lotofácil]. Uma curiosidade legal desse exercício é que podemos pegar outros concursos como mega-sena mudando o parametro modalidade da url.
 
 Outro ponto é que a requisição dessa url só dá certa ao adicionarmos o parametro verify=False na função get. [Pesquisar mais sobre isso]
 
